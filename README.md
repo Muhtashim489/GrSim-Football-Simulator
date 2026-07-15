@@ -66,23 +66,22 @@ where $w = 0.70$ (tangential weight) and the influence radius $\rho_0 = 0.60\tex
 
 ## 🛠️ Setup & Installation
 
-+-----------------------+
-|    grSim Simulator    | <---------+
-+-----------------------+           |
-            |                       |
-    UDP (SSL-Vision)                |
-            v                       |
-+----------------------------+      |
-|      ssl_ros_bridge        |      | UDP Protobuf
-+----------------------------+      | (RobotControl)
-            |                       |
-  ROS 2 (/ssl_vision_bridge)        |
-            v                       |
-+----------------------------+      |
-|        Control Node        | -----+
-| (teleop / tracker / nav)   |
-+----------------------------+
-
+             +-----------------------+
+             |    grSim Simulator    | <---------+
+             +-----------------------+           |
+                         |                       |
+                UDP (SSL-Vision)                 |
+                         v                       |
+          +----------------------------+         |
+          |      ssl_ros_bridge        |         | UDP Protobuf
+          +----------------------------+         | (RobotControl)
+                         |                       |
+          ROS 2 (/ssl_vision_bridge)             |
+                         v                       |
+          +----------------------------+         |
+          |        Control Node        | --------+
+          | (teleop / tracker / nav)   |
+          +----------------------------+
 ### Prerequisites
 * Ubuntu 22.04 LTS (or equivalent)
 * ROS 2 (Humble/Iron/Jazzy)
