@@ -48,7 +48,7 @@ Attractive forces scale linearly near the goal ($d \le 0.60\text{ m}$) and bound
 
 Repulsive force vectors ($F_{rep}$) are calculated using a Khatib formulation modified with a lateral bias to safely thread narrow gaps:
 
-$$F_{rep} = \text{rep\_mag} \cdot \left[ (1 - w)\vec{u}_{radial} + w(\vec{u}_{tangential}) \right]$$
+$$F{rep} = \text{rep\_mag} \cdot \left[ (1 - w)\vec{u}_{radial} + w(\vec{u}_{tangential}) \right]$$
 
 where $w = 0.70$ (tangential weight) and the influence radius $\rho_0 = 0.60\text{ m}$.
 
